@@ -1,7 +1,7 @@
 function multiplicationTable() {
-    let number = parseint(document.getElementById("numberInput").value);
+    let number = parseint(document.getElementById("baseNumber").value);
     let table = "";
-    for (i = 1; i<= limit ; i++){
+    for (i = startNumber; i<= endNumber ; i++){
         result = number * i;
         table += `${number} x ${i} = ${result} <br>`;
     }
