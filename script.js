@@ -5,7 +5,7 @@ function multiplicationTable() {
     let table = "";
     for (i = startNumber; i<= endNumber ; i++){
         result = number * i;
-        table += `${number} x ${i} = ${result} <br>`;
+        table += `${number} x ${i} = ${result}\n`;
     }
     document.getElementById("tableOutput").innerHTML = table;
 }
