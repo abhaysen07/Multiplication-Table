@@ -1,5 +1,7 @@
 function multiplicationTable() {
     let number = parseint(document.getElementById("baseNumber").value);
+    let startNumber = parseint(document.getElementById("startNumber").value);
+    let endNumber = parseint(document.getElementById("endNumber").value);
     let table = "";
     for (i = startNumber; i<= endNumber ; i++){
         result = number * i;
