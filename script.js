@@ -3,8 +3,8 @@ function multiplicationTable() {
     let startNumber = parseInt(document.getElementById("startNumber").value);
     let endNumber = parseInt(document.getElementById("endNumber").value);
     let table = "";
-    for (i = startNumber; i<= endNumber ; i++){
-        result = number * i;
+    for (let i = startNumber; i<= endNumber ; i++){
+        let result = number * i;
         table += `${number} x ${i} = ${result}\n`;
     }
     document.getElementById("tableOutput").innerHTML = table;
