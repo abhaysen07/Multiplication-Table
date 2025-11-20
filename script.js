@@ -7,5 +7,5 @@ function multiplicationTable() {
         let result = number * i;
         table += `${number} x ${i} = ${result}\n`;
     }
-    document.getElementById("tableOutput").innerHTML = table;
+    document.getElementById("tableOutput").textContent = table;
 }
