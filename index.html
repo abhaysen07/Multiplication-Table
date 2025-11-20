@@ -123,64 +123,64 @@
     </p>
     <!-- Documentation of Code logic -->
     <section id="Documentation of Code logic">
-// ------------------------------------------------------------
-// FUNCTION: multiplicationTable()
-// Triggered when user clicks the "Generate Table" button
-// ------------------------------------------------------------
-function multiplicationTable() {
+// ------------------------------------------------------------<br><br>
+// FUNCTION: multiplicationTable()<br>
+// Triggered when user clicks the "Generate Table" button<br>
+// ------------------------------------------------------------<br><br>
+function multiplicationTable() { <br><br>
 
-    // --------------------------------------------------------
-    // Read the base number from the input field (string → int)
-    // Example: User enters "5" → number becomes 5
-    // --------------------------------------------------------
-    let number = parseInt(document.getElementById("baseNumber").value);
+    // --------------------------------------------------------<br><br>
+    // Read the base number from the input field (string → int)<br>
+    // Example: User enters "5" → number becomes 5<br>
+    // --------------------------------------------------------<br><br>
+    let number = parseInt(document.getElementById("baseNumber").value);<br>
 
-    // --------------------------------------------------------
-    // Read the start number of the range
-    // Example: User enters "1" → startNumber becomes 1
-    // --------------------------------------------------------
-    let startNumber = parseInt(document.getElementById("startNumber").value);
+    // --------------------------------------------------------<br><br>
+    // Read the start number of the range<br>
+    // Example: User enters "1" → startNumber becomes 1<br>
+    // --------------------------------------------------------<br><br>
+    let startNumber = parseInt(document.getElementById("startNumber").value);<br>
 
-    // --------------------------------------------------------
-    // Read the end number of the range
-    // Example: User enters "10" → endNumber becomes 10
-    // --------------------------------------------------------
-    let endNumber = parseInt(document.getElementById("endNumber").value);
+    // --------------------------------------------------------<br><br>
+    // Read the end number of the range<br>
+    // Example: User enters "10" → endNumber becomes 10<br>
+    // --------------------------------------------------------<br><br>
+    let endNumber = parseInt(document.getElementById("endNumber").value);<br>
 
-    // --------------------------------------------------------
-    // Prepare an empty string to store each line of the table
-    // Every iteration of the loop will append one row
-    // --------------------------------------------------------
-    let table = "";
+    // --------------------------------------------------------<br><br>
+    // Prepare an empty string to store each line of the table<br>
+    // Every iteration of the loop will append one row<br>
+    // --------------------------------------------------------<br><br>
+    let table = "";<br>
 
-    // --------------------------------------------------------
-    // Main loop:
-    // Runs from startNumber → endNumber
-    // Each loop multiplies the base number with the counter 'i'
-    // --------------------------------------------------------
-    for (let i = startNumber; i <= endNumber; i++) {
+    // --------------------------------------------------------<br><br>
+    // Main loop:<br>
+    // Runs from startNumber → endNumber<br>
+    // Each loop multiplies the base number with the counter 'i'<br>
+    // --------------------------------------------------------<br><br>
+    for (let i = startNumber; i <= endNumber; i++) {<br>
 
-        // ----------------------------------------------------
-        // Multiply the base number by the current loop value (i)
-        // Example: 5 * 3 = 15
-        // ----------------------------------------------------
-        let result = number * i;
+        // ----------------------------------------------------<br><br>
+        // Multiply the base number by the current loop value (i)<br>
+        // Example: 5 * 3 = 15<br>
+        // ----------------------------------------------------<br><br>
+        let result = number * i;<br>
 
-        // ----------------------------------------------------
-        // Add one formatted line to the output
-        // Each line follows the pattern:
-        // "<base> x <i> = <result>"
-        // Example output:
-        // 5 x 3 = 15
-        // ----------------------------------------------------
-        table += `${number} x ${i} = ${result}\n`;
+        // ----------------------------------------------------<br><br>
+        // Add one formatted line to the output<br>
+        // Each line follows the pattern:<br>
+        // "<base> x <i> = <result>"<br>
+        // Example output:<br>
+        // 5 x 3 = 15<br>
+        // ----------------------------------------------------<br><br>
+        table += `${number} x ${i} = ${result}\n`;<br>
     }
 
-    // --------------------------------------------------------
-    // Display the final table in the HTML <pre> block
-    // Using textContent to preserve new lines (\n)
-    // --------------------------------------------------------
-    document.getElementById("tableOutput").textContent = table;
+    // --------------------------------------------------------<br><br>
+    // Display the final table in the HTML <pre> block<br>
+    // Using textContent to preserve new lines (\n)<br>
+    // --------------------------------------------------------<br><br>
+    document.getElementById("tableOutput").textContent = table;<br>
 }
     </section>
     <section>
